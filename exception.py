@@ -53,10 +53,15 @@ except IndexError:
 #Q6
 class AgeTooSmallError(Exception):
     pass
-try:
-     age=int(input("enter age"))
-     print(age)
-     if(age<18):
-         raise AgeTooSmallError
-except AgeTooSmallError:
-    print("entered age is less than 18")
+a=True
+while(a):
+
+    try:
+        age=int(input("enter age "))
+        if (age < 18):
+            raise AgeTooSmallError
+        else:
+            a=False
+            print("entered age is %d"%age)
+    except AgeTooSmallError:
+        print("entered age is less than 18")

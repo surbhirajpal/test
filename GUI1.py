@@ -9,6 +9,26 @@ top.mainloop()
 
 
 
+#ques2
+item=tkinter.Tk()
+def close():
+    item.destroy()
+def write():
+    x=Label(item,text="you clicked write button")
+    x.pack()
+item.title("GUI")
+item.geometry("100x200")
+b1=tkinter.Button(item,text="exit",command=close)
+b1.pack()
+b2=tkinter.Button(item,text="write",command=write)
+b2.pack()
+b1.place(x=40,y=100)
+b2.place(x=40,y=40)
+item.mainloop()
+
+
+
+
 #Q3
 from tkinter import *
 test=Tk()

@@ -21,7 +21,8 @@ b=np.random.random((20,25))
 #a.dtype=np.float64
 #b.dtype=np.float64
 #print(a*b)
-c=a@b
+#c=a@b 
+c=np.matmul(a,b)
 print(c)
 d=np.sum(c)
 print("sum of all elements of new matrix is "+str(d))

@@ -9,7 +9,7 @@ top.mainloop()
 
 
 
-#ques2
+#Q2
 item=tkinter.Tk()
 def close():
     item.destroy()
